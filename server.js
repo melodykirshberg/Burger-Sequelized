@@ -14,7 +14,7 @@ app.use(express.json());
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-require('./routes/burger.js')(app);
+require('./routes/api-routes.js')(app);
 
 
 db.sequelize.sync().then(function() {

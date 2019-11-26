@@ -1,7 +1,7 @@
 // Create Burger Object ==================
 
 module.exports = function (sequelize, DataTypes) {
-    const burger = sequelize.define('Burger', {
+    const burger = sequelize.define('burger', {
         id: {
             type: DataTypes.INTEGER,
             allowNull: false,

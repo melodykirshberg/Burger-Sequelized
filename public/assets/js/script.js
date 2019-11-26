@@ -31,7 +31,7 @@ $('.devour-button').on('click', function (event) {
 $('.delete-button').on('click', function (event) {
     const id = $(this).data('id');
     $.ajax({
-        url: '/api/burgers',
+        url: '/api/burgers/' + id,
         type: 'DELETE',
         data: { id }
     }).then(
